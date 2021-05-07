@@ -10,11 +10,13 @@ The algorithm developed for the playlist generator is inefficient and very basic
 The database used is MongoDB, only the login credentials are stored inside the database. The results from the quiz are not saved in the database, the playlist is stored in a  script file, rather than being pulled from the database. 
 
 
-                                            Instalation:
+                                            Installation:
 
 1.Git clone the repository 
 
 2.CD/Open the repository from the terminal
+
+3.npm install - Install the modules from the package.json
                                     
 3.Node "app.js" -  The server will start on PORT: "localhost:5000"
                                     
