@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+img{
+    text-align: center;
+    width: 125px;
+    height:125px;
+}
+
+#after_submit {
+    text-align: center;
+	visibility: hidden;
+	background: lightgrey;
+	width: 400px;
+	border-radius: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+
+
+}
+
+#picture {
+	width: 375px;
+	height: 245px;
+}

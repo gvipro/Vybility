@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>Love quiz</title>
+</head>
+<body>
+
+    <div class="col-md-6 m-auto">
+        <div class="text-center">
+                <h1>Please fill out the quiz!</h1>
+                
+                
+        </div>
+    </div>
+    
+    <div class="col-md-6 m-auto">
+     <div class="text-center">
+        <hr>
+        <form name="quizLove" action="/result1">
+        <p>Do you want a hug?</p>
+        <input type="radio" name="question1" value="yes" id="mc">Yes
+        <input type="radio" name="question1" value="no"  id="mc">No    
+        <hr>
+        <p>Do you love someone</p>
+        <input type="radio" name="question2" value="yes" id="mc">Yes
+        <input type="radio" name="question2" value="no"  id="mc">No    
+        <hr>
+        <p>Is love important to you?</p>
+        <input type="radio" name="question3" value="yes" id="mc">Yes
+        <input type="radio" name="question3" value="no"  id="mc">No    
+        <hr>
+        <p>Do you want to be close to someone right now?</p>
+        <input type="radio" name="question4" value="yes" id="mc">Yes
+        <input type="radio" name="question4" value="no"  id="mc">No    
+        <hr>
+        <p>Love is good or bad?</p>
+        <input type="radio" name="question5" value="yes" id="mc">Good
+        <input type="radio" name="question5" value="no"  id="mc">Bad    
+        <hr>
+        <p>People should love each other?</p>
+        <input type="radio" name="question6" value="yes" id="mc">Yes
+        <input type="radio" name="question6" value="no"  id="mc">No    
+        <hr>
+        <p>Do you like Valentine's Day?</p>
+        <input type="radio" name="question7" value="yes" id="mc">Yes
+        <input type="radio" name="question7" value="no"  id="mc">No    
+        <hr>
+        
+        <a href="/users/logout" class="btn btn-info">Back</a>
+        <input id="button" type="button" value="Submit" onclick="checkLove();">
+        
+        </form>
+     </div>
+    </div>
+    
+</body>
+</html>
