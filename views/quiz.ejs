@@ -1,0 +1,94 @@
+<!-- <script type='text/javascript' src='/views/javascript.js'></script>
+<script type='text/javascript' src='views/javascript.js'></script>
+<script type='text/javascript' src='javascript.js'></script>
+<script type='text/javascript' src='/javascript.js'></script>
+<script type='text/javascript' src='public/javascript.js'></script> -->
+
+<div class="col-md-6 m-auto">
+    <div class="text-center">
+            <h1>Please fill out the quiz!</h1>     
+    </div>
+</div>
+
+<div class="col-md-6 m-auto">
+ <div class="text-center">
+    <hr>
+    <form name="quizLove" action="/resultLove">
+    <p>Do you want a hug?</p>
+    <input type="radio" name="question1" value="yes" id="a1">Yes
+    <input type="radio" name="question1" value="no"  id="b1">No    
+    <hr>
+    <p>Do you love someone</p>
+    <input type="radio" name="question2" value="yes" id="a2">Yes
+    <input type="radio" name="question2" value="no"  id="b2">No    
+    <hr>
+    <p>Is love important to you?</p>
+    <input type="radio" name="question3" value="yes" id="a3">Yes
+    <input type="radio" name="question3" value="no"  id="b3">No    
+    <hr>
+    <p>Do you want to be close to someone right now?</p>
+    <input type="radio" name="question4" value="yes" id="a4">Yes
+    <input type="radio" name="question4" value="no"  id="b4">No    
+    <hr>
+    <p>Love is good or bad?</p>
+    <input type="radio" name="question5" value="good" id="a5">Good
+    <input type="radio" name="question5" value="bad"  id="b5">Bad    
+    <hr>
+    <!-- Happy Questions -->
+    <p> Do you prefer listening to music which has a bass?</p>                                       
+    <input type="radio" name="question6" value="yes" id="a6">Yes
+    <input type="radio" name="question6" value="no"  id="b6">No  
+    <hr>
+    <p>Do you think music can conquer world peace?</p>
+    <input type="radio" name="question7" value="yes" id="a7">Yes
+    <input type="radio" name="question7" value="no"  id="b7">No  
+    <hr>
+    <p>Does the volume of a song ever influence your enjoyment?</p>
+    <input type="radio" name="question8" value="yes" id="a8">Yes
+    <input type="radio" name="question8" value="no"  id="b8">No  
+    <hr>
+    <p>Do you find happiness in the little things?</p>
+    <input type="radio" name="question9" value="yes" id="a9">Yes
+    <input type="radio" name="question9" value="no"  id="b9">No  
+    <hr>
+    <p>Is your happiness unconditional?</p>
+    <input type="radio" name="question10" value="yes" id="a10">Yes
+    <input type="radio" name="question10" value="no"  id="b10">No  
+    <hr>
+    <!-- Sad Questions -->
+    <p>Do you think sad songs enable for you to grow as a person?</p>
+    <input type="radio" name="question11" value="yes" id="a11">Yes
+    <input type="radio" name="question11" value="no"  id="b11">No  
+    <hr>
+    <p>Do you listen to the lyrics of the song and relate with artists?</p>
+    <input type="radio" name="question12" value="yes" id="a12">Yes
+    <input type="radio" name="question12" value="no"  id="b12">No  
+    <hr>
+    <p>Would you listen to songs that relate to memory?</p>
+    <input type="radio" name="question13" value="yes" id="a13">Yes
+    <input type="radio" name="question13" value="no"  id="b13">No  
+    <hr>
+    <p>Are you holding onto something you want to let go off but you can’t?</p>
+    <input type="radio" name="question14" value="yes" id="a14">Yes
+    <input type="radio" name="question14" value="no"  id="b14">No  
+    <hr>
+    <p>Is your heart broken?</p>
+    <input type="radio" name="question15" value="yes" id="a15">Yes
+    <input type="radio" name="question15" value="no"  id="b15">No  
+   
+    <hr>
+    <input  id="button" type="button" value="Submit" onclick="checkLove()">
+    </form>
+
+        <div id = "after_submit">
+            <p id = "number_correct"></p>
+            
+        </div>
+    
+    
+    <hr>
+    <a href="/quiz" class="btn btn-info btn-block">Refresh</a>
+    <a href="/users/logout" class="btn btn-info btn-block">Back</a>
+    
+ </div>
+</div>

@@ -1,0 +1,62 @@
+<!-- <script type='text/javascript' src='/views/javascript.js'></script>
+<script type='text/javascript' src='views/javascript.js'></script>
+<script type='text/javascript' src='javascript.js'></script>
+<script type='text/javascript' src='/javascript.js'></script>
+<script type='text/javascript' src='public/javascript.js'></script> -->
+
+<div class="col-md-6 m-auto">
+  <div class="text-center">
+    <h1>Please fill out the questionnaire!</h1>     
+  </div>
+</div>
+<% include ./partials/messages %>
+
+<div class="col-md-6 m-auto">
+  <div class="text-center">
+  <form name="questionnaire" action="/questionnaire" method="post">
+    <hr>
+    <% for(var i = 0; i < questions.length; i++) { %>
+      <% var question = questions[i] %>
+      <!--Render text question-->
+      <%if (question.type === 'text') { %>
+        <label for="<%= question.id %>"><%= question.text %></label>
+        <input type="text" id="<%= question.id %>" name="<%= question.id %>" required>
+      <% } %>
+    
+      <!--Render number question-->
+      <%if (question.type === 'number') { %>
+        <label for="<%= question.id %>"><%= question.text %></label>
+        <input type="number" id="<%= question.id %>" name="<%= question.id %>" required>
+      <% } %>
+    
+      <!--Render single-select question-->
+      <%if (question.type === 'single-select') { %>
+        <p><%= question.text %></p>
+        <% for(var j = 0; j < question.options.length; j++) { %>
+          <% var option = question.options[j] %>
+          <input type="radio" name="<%= question.id %>" value="<%= option %>" id="<%= option %>" required>
+          <%= option %>
+        <% } %>
+      <% } %>
+    
+      <!--Render single-select question-->
+      <%if (question.type === 'multi-select') { %>
+        <% for(var j = 0; j < question.options.length; j++) { %>
+          <% var option = question.options[j] %>
+          <input type="checkbox" name="<%= question.id %>" value="<%= option %>" id="<%= option %>">
+          <%= option %>
+        <% } %>
+      <% } %>
+      <hr>
+    <% } %>
+    <input  id="button" type="submit" value="Submit" onclick="checkLove()">
+  </form>
+
+  <div id = "after_submit">
+    <p id = "number_correct"></p>
+  </div>
+  <hr>
+  <a href="/questionnaire" class="btn btn-info btn-block">Refresh</a>
+  <a href="/dashboard" class="btn btn-info btn-block">Back</a>
+ </div>
+</div>
